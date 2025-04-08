@@ -29,7 +29,7 @@ export function ExploreView(musicData: []) {
   useEffect(() => {
     const fetchMusicData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/recommendations");
+        const response = await fetch("http://10.168.0.1/recommendations");
         if (response.ok) {
           const data = await response.json();
 

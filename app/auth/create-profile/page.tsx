@@ -25,7 +25,7 @@ export default function CreateProfilePage() {
     // Fetch music data from Flask backend
     const fetchMusicData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/profile-data");
+        const response = await fetch("http://10.168.0.1:5000/profile-data");
 
         if (response.ok) {
           const result = await response.json();
@@ -61,7 +61,7 @@ export default function CreateProfilePage() {
       // Endpoint: POST /api/profile/create
       // Headers: Authorization: Bearer {token}
       // Body: { displayName, username, bio, genres: selectedGenres }
-      const response = await fetch("http://127.0.0.1:5000/api/profile/create", {
+      const response = await fetch("http://10.168.0.1:5000/api/profile/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

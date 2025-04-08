@@ -30,7 +30,7 @@ export default function EditProfilePage() {
     // Fetch music data from Flask backend
     const fetchMusicData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/profile-data");
+        const response = await fetch("http://10.168.0.1:5000/profile-data");
 
         if (response.ok) {
           const result = await response.json();

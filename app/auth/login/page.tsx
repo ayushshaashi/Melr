@@ -30,7 +30,7 @@ export default function LoginPage() {
       // Call Flask backend for authentication
       // Endpoint: POST /api/auth/login
       // Body: { email, password }
-      const response = await fetch("http://127.0.0.1:5000/api/auth/login", {
+      const response = await fetch("http://10.168.0.1:5000/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

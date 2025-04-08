@@ -31,7 +31,7 @@ export default function SignupPage() {
       // Call Flask backend for registration
       // Endpoint: POST /api/auth/signup
       // Body: { email, password }
-      const response = await fetch("http://127.0.0.1:5000/api/auth/signup", {
+      const response = await fetch("http://10.168.0.1:5000/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
